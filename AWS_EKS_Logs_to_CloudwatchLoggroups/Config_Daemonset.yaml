@@ -19,9 +19,9 @@ spec:
       containers:
         - env:
             - name: AWS_REGION
-              value: us-east-1
+              value: ap-south-1
             - name: AWS_EKS_CLUSTER_NAME
-              value: my-eks
+              value: devops-cluster
           image: 'fluent/fluentd-kubernetes-daemonset:v1.1-debian-cloudwatch'
           imagePullPolicy: IfNotPresent
           name: fluentd-cloudwatch
